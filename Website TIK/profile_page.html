@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="icon" href="https://i.ibb.co/7rWKwZS/1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bowlby+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="profile_page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="png" href="pepe.png">
+</head>
+
+<body class="body_html">
+    <div class="loader">
+        <img src="pepe.png" alt="Loading..." />
+    </div>
+    <nav class="navbar fixed-top sticky-top navbar-expand-sm">
+        <a class="navbar-brand" href="PROTOTYPE_2.html"
+            style=" color:white; font-family: Coolvetica , cursive; font-size: xx-large; padding: 0;">
+            Nextion
+        </a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="material-icons"><span class="material-icons">list</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="search navbar-nav ml-auto mr-auto">
+                <li class="nav-item">
+                    <div class="justify-content-sm-center">
+                        <form class="form-inline my-2 my-md-0 my-md-0">
+                            <input class="input" type="text" placeholder="@username" aria-label="Search">
+                            <button class="button" type="submit"><span class="material-icons" style="color: black; font-size: 20pt;">search</span></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+
+
+            <ul class=" left_navbar_side navbar-nav">
+                <li class="nav-item"><a class="tool nav-link" href="index.html">
+                        <span class="material-icons">home</span></a>
+                </li>
+                <li class="nav-item"><a class="tool nav-link" href="explore_beneran.html">
+                        <span class="material-icons">explore</span></a>
+                </li>
+                <li class="nav-item"><a class="tool nav-link" href="message_box.html">
+                        <span class="material-icons">mail</span></a>
+                </li>
+                <li class="account_dropdown nav-item dropdown">
+                    <a class="tool nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><span
+                            class="material-icons">account_circle</span></a></a>
+                    <div class="account_menu dropdown-menu dropdown-menu-right"
+                        style="background-color:rgb(46, 49, 49);">
+                        <a class="dropdown-item" href="profile_page.html">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                                alt="" />Account Center</a>
+                        <a class="dropdown-item" href="Notif.html">Notification</a>
+                        <a class="dropdown-item" href="setting.html">Settings</a>
+                        <a class="dropdown-item" href="login_beneran.html">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="grid-container">
+
+        <!-- Friends Online -->
+        <div class="grid-left" id="friends_online">
+            <div class="friends_online-header">
+                <span class="material-icons">group</span>
+                <h4 class="titles">Friends Online</h4>
+            </div>
+        </div>
+        <!-- End of Friends Online -->
+
+        <!-- Empty -->
+        <div class="grid-empty">&nbsp;</div>
+        <!-- End of Empty -->
+
+        <!-- Profile -->
+        <div class="grid-mid" id="profile">
+            <div class="header">
+                <div class="page_name">
+                    <h3>Profile</h3>
+                </div>
+                <div class="header-left">
+                    <div class="friends">
+                        <p><b>3</b>&nbsp;&nbsp;Friends</p>
+                    </div>
+                    <div class="friends-information"> 
+                        <button type="button" data-modal-target="#modal-information"><span class="material-icons"> info </span></button>
+                        <span class="popup-text" id="popup"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top">
+                <div class="background_img">
+                    <div class="top_content">
+                        <div class="image">
+                            <div class="profile_img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                                    alt="gambar" class="rounded-circle prof_img" id="photo" width="150px" height="150px" />
+                                <div class="change_img">
+                                    <input type="file" id="file">
+                                    <label for="file" id="uploadBtn">Change Image</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top_right">
+                            <div class="name">
+                                <h4>Nicholas Jansens</h4>
+                                <span class="material-icons"> verified </span>
+                                <!--
+                                <button class="edit" onclick="location.href='profile.html';"><i
+                                        data-feather="edit"></i></button>
+                                -->
+                            </div>
+                            <div class="number-tweets-followers-following">
+                                <div class="number_tweets">
+                                    <p> <b>1</b>&nbsp;&nbsp;Tweets</p>
+                                </div>
+                                <div class="number_followers">
+                                    <button type="button" data-modal-target="#modal-followers">
+                                        <b>1</b>&nbsp;&nbsp;Followers</button>
+                                </div>
+                                <div class="number_following">
+                                    <button type="button" data-modal-target="#modal-following">
+                                        <b>1</b>&nbsp;&nbsp;Following</button>
+                                </div>
+                            </div>
+                            <div class="edit_profile">
+                                <button type="button" onclick="location.href='profile.html';">Edit Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more_profile_info">
+                        <div class="username">
+                            <p>@Jansennns_</p>
+                        </div>
+                        <div class="bio">
+                            <p>
+                                Hi, im 18 Years old and im NRG Content Creator.
+                                Im only following my supporter and my only one supporter is 
+                                Ferdinand Iskandar
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs justify-content-center main" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="tweets-tab" data-toggle="tab" href="#tweets" role="tab"
+                                aria-controls="tweets" aria-selected="true">Tweets</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab"
+                                aria-controls="media" aria-selected="false">Media</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="shorts-tab" data-toggle="tab" href="#shorts" role="tab"
+                                aria-controls="shorts" aria-selected="false">Shorts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tweets, Media, Shorts -->
+
+            <div class="bottom">
+                <div class="tab-content bottom_content" id="myTabContent">
+                    <div class="tab-pane fade show active your_tweets" id="tweets" role="tabpanel"
+                        aria-labelledby="tweets-tab">
+                        <div class="post">
+                            <div class="the_post_content">
+                                <div class="profile-picture">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                                        alt="" />
+                                    <h3>
+                                        <a href="#">Jansennns_</a>
+                                    </h3>
+                                </div>
+
+                                <div class="post_body">
+                                    <img src="https://img.freepik.com/free-photo/friendly-handsome-dark-skinned-guy-waving-hand-saying-hello-greeting-welcoming-person-smiling-cheerful_176420-25289.jpg"
+                                        alt="" />
+                                    <div class="utility-icon">
+                                        <button class="like_button"><span
+                                                class="material-icons">favorite_border</span></button>
+                                        <button class="like_button" id="comment_button"><span
+                                                class="material-icons">maps_ugc_outline</span></button>
+                                        <button class="like_button"><span
+                                                class="material-icons">send_round</span></button>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            Helo geys, my name is jansen, i love you all!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="tab-pane fade your_media" id="media" role="tabpanel" aria-labelledby="media-tab">
+                        <div class="post">
+                            <div class="the_post_content">
+                                <div class="profile-picture">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                                        alt="" />
+                                    <h3>
+                                        <a href="#">Jansennns_</a>
+                                    </h3>
+                                </div>
+
+                                <div class="post_body">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHDOksrwN7pDuGkNIgqdqVU4okmutHU4P9DA&usqp=CAU"
+                                        alt="" />
+                                    <div class="utility-icon">
+                                        <button class="like_button"><span
+                                                class="material-icons">favorite_border</span></button>
+                                        <button class="like_button" id="comment_button"><span
+                                                class="material-icons">maps_ugc_outline</span></button>
+                                        <button class="like_button"><span
+                                                class="material-icons">send_round</span></button>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            That's my dad, Whatsup!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade your_shorts" id="shorts" role="tabpanel" aria-labelledby="shorts-tab">
+                        <div class="post">
+                            <div class="the_post_content">
+                                <div class="profile-picture">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                                        alt="" />
+                                    <h3>
+                                        <a href="#">Jansennns_</a>
+                                    </h3>
+                                </div>
+
+                                <div class="post_body">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2WEG_g6wBx-TmoqWAtbRHjiBoHwRKB_rRPBMzvSbaxrMarCTJU17WFKCGTCSO7bFlSVs&usqp=CAU"
+                                        alt="" />
+                                    <div class="utility-icon">
+                                        <button class="like_button"><span
+                                                class="material-icons">favorite_border</span></button>
+                                        <button class="like_button" id="comment_button"><span
+                                                class="material-icons">maps_ugc_outline</span></button>
+                                        <button class="like_button"><span
+                                                class="material-icons">send_round</span></button>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            I love Penguin!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Profile -->
+
+        <!-- Trending Now -->
+        <div class="grid-right-top" id="trending_now">
+            <a class="titles">#TRENDINGTOPIC</a>
+            <div class="trends">
+                <div class="trend">
+                    <a href="">Vegetarian Fought Chicken in McDonalds</a>
+                    <button onclick="location.href='login_beneran.html';"><span
+                            class="material-icons">more_horiz</span></button>
+                </div>
+
+                <div class="trend">
+                    <a href="">Indonesia bought Bugatti with Tempe mendoan</a>
+                    <button onclick="location.href='login_beneran.html';"><span
+                            class="material-icons">more_horiz</span></button>
+                </div>
+
+                <div class="trend">
+                    <a href="">Heavy Rain in Jakarta made Jakarta flood</a>
+                    <button onclick="location.href='login_beneran.html';"><span
+                            class="material-icons">more_horiz</span></button>
+                </div>
+            </div>
+            <div class="trending-seeMore">
+                <a href="">See More</a>
+            </div>
+        </div>
+        <!-- End of Trending Now -->
+
+        <!-- Follow Me -->
+        <div class="grid-right-bottom" id="follow_me">
+            <a class="titles">FOLLOW SUGGESTION</a>
+            <div class="suggested_accounts">
+                <div class="suggested_account">
+                    <div class="account_img">
+                        <img class="acc_img"
+                            src="https://www.shutterstock.com/shutterstock/photos/1850222983/display_1500/stock-vector-anonymous-vector-icon-incognito-sign-privacy-concept-human-head-with-glitch-face-personal-data-1850222983.jpg"
+                            alt="gambar" width="50px" height="50px" />
+                    </div>
+                    <div class="name-username">
+                        <a href="">Gamer Pro</a>
+                        <p>@s3nseee_</p>
+                    </div>
+                    <button class="follow_button" id="follow_button"><i onclick="changeIcons(this)"
+                            class="fa fa-user-plus"></i></button>
+                </div>
+
+                <div class="suggested_account">
+                    <div class="account_img">
+                        <img class="acc_img"
+                            src="https://i.pinimg.com/280x280_RS/37/d5/87/37d58769c6f3914a3ba69555c159a677.jpg"
+                            alt="gambar" width="50px" height="50px" />
+                    </div>
+                    <div class="name-username">
+                        <a href="">
+                            Newbie on everything</a>
+                        <p>@keis.hha</p>
+                    </div>
+                    <button class="follow_button" id="follow_button"><i onclick="changeIcons(this)"
+                            class="fa fa-user-plus"></i></button>
+                </div>
+            </div>
+            <div class="trending-followMe">
+                <a href="">See More</a>
+            </div>
+        </div>
+        <!-- End of Follow Me -->
+
+        <!-- Credits-->
+        <div class="grid-credits" id="credits">
+            <div class="credits-content">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a><br>
+                <a href="#">&copy;2023 s3nse corporation</a>
+            </div>
+        </div>
+        <!-- End of Credits -->
+    </div>
+    <!-- End of Container -->
+
+    <!-- Modal Followers -->
+    <div class="modal-followers" id="modal-followers">
+        <div class="modal-header">
+            <div class="title"> Followers</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body-followers">
+            <div class="modal-body-followers-content">
+                <div class="account_img">
+                    <img class="acc_img"
+                        src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"
+                        alt="gambar" width="50px" height="50px" />
+                </div>
+                <div class="name-username">
+                    <a href="">Ferdinand Iskandar</a>
+                    <p>@KuRoZz</p>
+                </div>
+                <button class="follow_button" id="follow_button"><i class="fa fa-user-times"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <!-- End of Modal Followers -->
+
+    <!-- Modal Following -->
+    <div class="modal-following" id="modal-following">
+        <div class="modal-header">
+            <div class="title">Following</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body-following">
+            <div class="modal-body-following-content">
+                <div class="account_img">
+                    <img class="acc_img"
+                        src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"
+                        alt="gambar" width="50px" height="50px" />
+                </div>
+                <div class="name-username">
+                    <a href="">Ferdinand Iskandar</a>
+                    <p>@KuRoZz</p>
+                </div>
+                <button class="follow_button" id="follow_button"><span class="material-icons"> person_remove </span></button>
+            </div>
+
+    <!-- End of Modal Following -->
+
+    <!-- Modal Information -->
+    <div class="modal-information" id="modal-information">
+        <div class="modal-header">
+            <div class="title"> Information</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body-information">
+            <div class="modal-body-information-content">
+                <h4>Friends are people who accepted your friend request.</h4>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <!-- End of Modal Information-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="profile_page.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

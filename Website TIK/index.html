@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextion</title>
+    <link rel = "icon" href = 
+    "https://i.ibb.co/7rWKwZS/1.jpg" 
+    type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bowlby+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_2.css">
+    <link rel="icon" type="png" href="pepe.png">
+</head>
+
+<body class="body_html">
+    <div class="loader">
+        <img src="pepe.png" alt="Loading..." />
+    </div>
+        <nav class="navbar fixed-top sticky-top navbar-expand-sm">
+            <a class="navbar-brand" href="index.html">
+                <b>Nextion</b>
+            </a>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-icons"><span class="material-icons">list</span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="search navbar-nav ml-auto mr-auto">
+                    <li class="nav-item">
+                      <div class="justify-content-sm-center">
+                        <form class="form-inline my-2 my-md-0 my-md-0">
+                          <input class="input" type="text" placeholder="@username" aria-label="Search">    
+                          <button class="button" type="submit"><span class="material-icons" style="color: black; font-size: 20pt;">search</span></button>         
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            
+      
+                <ul class=" left_navbar_side navbar-nav"> 
+                    <li class="nav-item"><a class="tool nav-link" href="index.html">
+                      <span class="material-icons">home</span></a>
+                    </li>  
+                    <li class="nav-item"><a class="tool nav-link" href="explore_beneran.html">
+                      <span class="material-icons">explore</span></a>
+                    </li>
+                    <li class="nav-item"><a class="tool nav-link" href="message_box.html">
+                      <span class="material-icons">mail</span></a>
+                    </li>
+                    <li class="account_dropdown nav-item dropdown">
+                      <a class="tool nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons">account_circle</span></a></a>
+                      <div class="account_menu dropdown-menu dropdown-menu-right" style="background-color:rgb(46, 49, 49);">
+                        <a class="dropdown-item" href="profile_page.html">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                            alt=""
+                          />Account Center</a>
+                        <a class="dropdown-item" href="Notif.html">Notification</a>
+                        <a class="dropdown-item" href="setting.html">Settings</a>
+                        <a class="dropdown-item" href="login_beneran.html">Log Out</a>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </nav>
+
+    <div class="container-xxl">
+        <div class="leftside">
+            <div class="Friend_bar_Option">
+                <span class="material-icons"> group </span>
+                <h2>Friend List</h2>
+            </div>
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">chuumuch</a>
+                <p>online</p>
+            </div>
+            </div>
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://cdn-icons-png.flaticon.com/512/3209/3209934.png"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">kejirehh</a>
+                <p>offline</p>
+            </div>
+            </div>
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmS9AK3y3gwb9qlqqAzEO9yxW95UAC3sjGw&usqp=CAU"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">YouKnow_Me2239</a>
+                <p>online</p>
+            </div>
+            </div>
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://i.pinimg.com/736x/e3/09/8d/e3098da3b82379f6a33562bc9bf9b38c.jpg"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">Anime_godxx</a>
+                <p>online</p>
+            </div>
+            </div>
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://image.shutterstock.com/image-vector/illustration-mafia-gangster-spy-icon-260nw-1906650151.jpg"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">Smoke_is_life</a>
+                <p>online</p>
+            </div>
+            </div>   
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://cdn0.iconfinder.com/data/icons/avatars-19/64/_Gangster_man-512.png"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">Gangster2020</a>
+                <p>online</p>
+            </div>
+            </div>
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WUENGZWI8XXGJczE15peFWoUyMoUgFJP0g&usqp=C"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">Bob_normal_healthy_1248</a>
+                <p>online</p>
+            </div>
+            </div>
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://cdn1.iconfinder.com/data/icons/avatars-vol-1/140/_gangster-512.png"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">Meat_lovers_221</a>
+                <p>online</p>
+            </div>
+            </div>
+            <div class="content">
+              <div class="friend">
+                <img class="acc_img"
+                    src="https://pbs.twimg.com/profile_images/1259734667214774273/pIRPG78R_400x400.jpg"
+                    alt="gambar" width="50px" height="50px" />
+            </div>
+            <div class="friend-username">
+                <a href="">Gorgon_theFather20</a>
+                <p>online</p>
+            </div>
+            </div>
+            
+        </div>
+        <main class="post_main">
+            <div class="feed">
+      
+                <div class="uploads">
+                  <form>
+                    <div class="uploads_input">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                        alt=""
+                      />
+                      <input type="text" placeholder="What's happening?" />
+                      <button class="upload-button">Share</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- tweetbox ends -->
+          
+                <!-- post starts -->
+                <div class="post">
+                  <div class="the_post_content">
+                    <div class="profile-picture">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png"
+                        alt=""
+                      />
+                      <h3>
+                        <a href="#">chuumuch</a>
+                      </h3>
+                    </div>
+            
+                    <div class="post_body">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Double-alaskan-rainbow.jpg/300px-Double-alaskan-rainbow.jpg"
+                        alt=""
+                      />
+                      <div class="utility-icon">
+                        <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                        <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                        <button class="like_button"><span class="material-icons">send_round</span></button>
+                      </div>
+                      <div class="desc">
+                        <p>
+                          Beautiful rainbow Oh My God!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- post ends -->
+
+                <!-- post starts -->
+                <div class="post">
+                    <div class="the_post_content">
+                      <div class="profile-picture">
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/3209/3209934.png"
+                          alt=""
+                        />
+                        <h3>
+                          <a href="#">Kejirehh</a>
+                        </h3>
+                      </div>
+              
+                      <div class="post_body">
+                        <img
+                          src="https://cms.sehatq.com/public/img/article_img/kenali-perbedaan-gym-dan-fitness-jangan-sampai-keliru-1665479194.jpg"
+                          alt=""
+                        />
+                        <div class="utility-icon">
+                          <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                          <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                          <button class="like_button"><span class="material-icons">send_round</span></button>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            WE GO GYMMMMMM!!!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post ends -->
+
+                  <!-- post starts -->
+                <div class="post">
+                    <div class="the_post_content">
+                      <div class="profile-picture">
+                        <img
+                          src="https://cdn3.iconfinder.com/data/icons/banking-finance-flat-circle-vol-5/100/profile__avatar__person__money__coin-512.png"
+                          alt=""
+                        />
+                        <h3>
+                          <a href="#">Rich_the_kid</a>
+                        </h3>
+                      </div>
+              
+                      <div class="post_body">
+                        <img
+                          src="https://mclaren.scene7.com/is/image/mclaren/DSC00052_6:crop-1x1?wid=1200&hei=1200"
+                          alt=""
+                        />
+                        <div class="utility-icon">
+                          <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                          <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                          <button class="like_button"><span class="material-icons">send_round</span></button>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            Brrrrrrr, cheap car.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post ends -->
+
+                  <!-- post starts -->
+                <div class="post">
+                    <div class="the_post_content">
+                      <div class="profile-picture">
+                        <img
+                          src="https://i.pinimg.com/736x/e3/09/8d/e3098da3b82379f6a33562bc9bf9b38c.jpg"
+                          alt=""
+                        />
+                        <h3>
+                          <a href="#">Anime_godxx</a>
+                        </h3>
+                      </div>
+              
+                      <div class="post_body">
+                        <img
+                          src="https://www.greenscene.co.id/wp-content/uploads/2022/04/Killer.jpg"
+                          alt=""
+                        />
+                        <div class="utility-icon">
+                          <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                          <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                          <button class="like_button"><span class="material-icons">send_round</span></button>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            Watch anime with me!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post ends -->
+
+                  <!-- post starts -->
+                <div class="post">
+                    <div class="the_post_content">
+                      <div class="profile-picture">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                          alt=""
+                        />
+                        <h3>
+                          <a href="#">Jansennns_</a>
+                        </h3>
+                      </div>
+              
+                      <div class="post_body">
+                        <img
+                          src="https://img.freepik.com/free-photo/friendly-handsome-dark-skinned-guy-waving-hand-saying-hello-greeting-welcoming-person-smiling-cheerful_176420-25289.jpg"
+                          alt=""
+                        />
+                        <div class="utility-icon">
+                          <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                          <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                          <button class="like_button"><span class="material-icons">send_round</span></button>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            Helo geys, my name is jansen, i love you all!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post ends -->
+
+                  <!-- post starts -->
+                <div class="post">
+                    <div class="the_post_content">
+                      <div class="profile-picture">
+                        <img
+                          src="https://thumbs.dreamstime.com/b/angry-gangster-skull-bandana-sticker-vector-illustration-gangsta-design-element-perfect-t-shirt-print-poster-157506993.jpg"
+                          alt=""
+                        />
+                        <h3>
+                          <a href="#">Skull_crusher1302</a>
+                        </h3>
+                      </div>
+              
+                      <div class="post_body">
+                        <img
+                          src="https://play-lh.googleusercontent.com/8OaYiZQ_jORGwIg21BnwAQJD8cA4K3C-PPgFgsvdXVFbuxTCpb2qg64qWVmHGKv1JZ0=w526-h296-rw"
+                          alt=""
+                        />
+                        <div class="utility-icon">
+                          <button class="like_button" id="like"><span class="material-icons">favorite_border</span></button>
+                          <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                          <button class="like_button"><span class="material-icons">send_round</span></button>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            Come and play mobel legend with me!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post ends -->
+
+                  <!-- post starts -->
+                <div class="post">
+                    <div class="the_post_content">
+                      <div class="profile-picture">
+                        <img
+                          src="https://cdn0.iconfinder.com/data/icons/avatars-19/64/_Gangster_man-512.png"
+                          alt=""
+                        />
+                        <h3>
+                          <a href="#">Gangster2020</a>
+                        </h3>
+                      </div>
+              
+                      <div class="post_body">
+                        <img
+                          src="https://asset.kompas.com/crops/ErVZm7wcKuA9eh3jTTC9H7f8dJU=/108x2:822x479/750x500/data/photo/2020/02/20/5e4e16d0306ef.jpg"
+                          alt=""
+                        />
+                        <div class="utility-icon">
+                          <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                          <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                          <button class="like_button"><span class="material-icons">send_round</span></button>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            They call me rap god.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post ends -->
+
+                  <!-- post starts -->
+                <div class="post">
+                    <div class="the_post_content">
+                      <div class="profile-picture">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WUENGZWI8XXGJczE15peFWoUyMoUgFJP0g&usqp=CAU"
+                          alt=""
+                        />
+                        <h3>
+                          <a href="#">Bob_normal_healthy_1248</a>
+                        </h3>
+                      </div>
+              
+                      <div class="post_body">
+                        <img
+                          src="https://www.helpguide.org/wp-content/uploads/calories-counting-diet-food-control-and-weight-loss-concept-calorie-768.jpg"
+                          alt=""
+                        />
+                        <div class="utility-icon">
+                          <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                          <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                          <button class="like_button"><span class="material-icons">send_round</span></button>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            YOU HAVE TO BE VEGETARIAN!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post ends -->
+
+                  <!-- post starts -->
+                <div class="post">
+                    <div class="the_post_content">
+                      <div class="profile-picture">
+                        <img
+                          src="https://cdn1.iconfinder.com/data/icons/avatars-vol-1/140/_gangster-512.png"
+                          alt=""
+                        />
+                        <h3>
+                          <a href="#">Meat_lovers_221</a>
+                        </h3>
+                      </div>
+              
+                      <div class="post_body">
+                        <img
+                          src="https://awsimages.detik.net.id/visual/2022/07/15/kfc_43.jpeg?w=450&q=90"
+                          alt=""
+                        />
+                        <div class="utility-icon">
+                          <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                          <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                          <button class="like_button"><span class="material-icons">send_round</span></button>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            dont care what people say, i love kfc.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post ends -->
+              </div>
+        </main>
+        <div class="rightside">
+            <div class="widgets">
+                <div class="container">
+                    <div class="box">
+                        <a class="Right_box">#TRENDINGTOPIC</a>
+                            <div class="trend-content" style="margin-top: 20px;">
+                                <div class="news">
+                                    <a>Vegetarian Fought Chicken in McDonalds</a>
+                                </div>
+                                <div class="logo">
+                                    <a href="login.html"><span class="material-icons">more_horiz</span></a>
+                                </div>
+                            </div>
+                            <div class="trend-content">
+                                <div class="news">
+                                    <a>Indonesia bought Bugatti with Tempe mendoan</a>
+                                </div>
+                                <div class="logo">
+                                    <a href="login.html"><span class="material-icons">more_horiz</span></a>
+                                </div>
+                            </div>
+                            <div class="trend-content">
+                                <div class="news">
+                                    <a>Heavy Rain in Jakarta made Jakarta flood</a>
+                                </div>
+                                <div class="logo">
+                                    <a href="login.html"><span class="material-icons">more_horiz</span></a>
+                                </div>
+                            </div>
+                            <div class="seemore">
+                                <a href="#">see more</a>
+                            </div>
+                    </div>
+                    <div class="box">
+                        <a class="Right_box">FOLLOW SUGGESTION</a>
+                        <div class="modal-body-following">
+                              <div class="modal-body-following-content">
+                                <div class="account_img">
+                                    <img class="acc_img"
+                                        src="https://www.shutterstock.com/shutterstock/photos/1850222983/display_1500/stock-vector-anonymous-vector-icon-incognito-sign-privacy-concept-human-head-with-glitch-face-personal-data-1850222983.jpg"
+                                        alt="gambar" width="50px" height="50px" />
+                                </div>
+                                <div class="name-username">
+                                    <a href="">Gamer Pro</a>
+                                    <p>@s3nseee_</p>
+                                </div>
+                                <button class="follow_button" id="follow_button"><span class="material-icons"> <span class="material-icons-outlined">
+                                  person_add_alt
+                                  </span> </span></button>
+                          </div>
+                          <div class="modal-body-following">
+                            <div class="modal-body-following-content">
+                              <div class="account_img">
+                                  <img class="acc_img"
+                                      src="https://i.pinimg.com/280x280_RS/37/d5/87/37d58769c6f3914a3ba69555c159a677.jpg"
+                                      alt="gambar" width="50px" height="50px" />
+                              </div>
+                              <div class="name-username">
+                                  <a href="">Newbie on everything</a>
+                                  <p>@keis.hha</p>
+                              </div>
+                              <button class="follow_button" id="follow_button"><span class="material-icons"> <span class="material-icons-outlined">
+                                person_add_alt
+                                </span> </span></button>
+                        </div>
+                        <div class="modal-body-following">
+                          <div class="modal-body-following-content">
+                            <div class="account_img">
+                                <img class="acc_img"
+                                    src="data:image/jpeg;base64,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"
+                                    alt="gambar" width="50px" height="50px" />
+                            </div>
+                            <div class="name-username">
+                                <a href="">Dont follow me</a>
+                                <p>@comersal_</p>
+                            </div>
+                            <button class="follow_button" id="follow_button"><span class="material-icons"> <span class="material-icons-outlined">
+                              person_add_alt
+                              </span> </span></button>
+                      </div>
+                      
+                      </div>
+                            <div class="seemore">
+                                <a href="#">see more</a>
+                            </div>
+                            
+                        <div id="overlay"></div>
+                    </div>
+                    <div class="credits">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a><br>
+                        <a href="#">&copy;2023 s3nse corporation</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FAB CONTAINER-->
+        <div class="fab-container">
+            <div class="fab fab-icon-holder">
+              <span class="material-icons">home</span>
+            </div>
+
+            <ul class="fab-options">
+              <li>
+                <span class="fab-label">Home</span>
+                <div class="fab-icon-holder">
+                  <a href="index.html"><span class="material-icons">home</span></a>
+                </div>
+              </li>
+              <li>
+                <span class="fab-label">Upload</span>
+                <div class="fab-icon-holder">
+                  <a href="#"><span class="material-icons">add</span></a>
+                </div>
+              </li>
+              <li>
+                <span class="fab-label">Message</span>
+                <div class="fab-icon-holder">
+                  <a href="message_box.html"><span class="material-icons">chat</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FAB CONTAINER-->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close"></span>
+              <!--modal-post-start-->
+              <div class="modal-post">
+              <div class="post_modal" style="width: fit-content; margin-left: 0%; height: 97%;">
+                <div class="the_post_content">
+                  <div class="profile-picture">
+                    <img
+                      src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png"
+                      alt=""
+                    />
+                    <h3>
+                      <a href="#">chuumuch</a>
+                    </h3>
+                  </div>
+          
+                  <div class="post_body">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Double-alaskan-rainbow.jpg/300px-Double-alaskan-rainbow.jpg"
+                      alt=""
+                    />
+                    <div class="utility-icon">
+                      <button class="like_button"><span class="material-icons">favorite_border</span></button>
+                      <button class="like_button" id="comment_button"><span class="material-icons">maps_ugc_outline</span></button>
+                      <button class="like_button"><span class="material-icons">send_round</span></button>
+                    </div>
+                    <div class="desc">
+                      <p>
+                        Beautiful rainbow Oh My God!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="apalaj" style="color: aliceblue;">
+                <div class="thecomment">
+                  <div class="comment_content">
+                    <img
+                        src="https://www.shutterstock.com/shutterstock/photos/1850222983/display_1500/stock-vector-anonymous-vector-icon-incognito-sign-privacy-concept-human-head-with-glitch-face-personal-data-1850222983.jpg"
+                        alt=""
+                      />
+                      <h3>
+                        <a href="#">s3nseee</a>
+                      </h3>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a>You Suck!</a>
+                </div>
+                <div class="thecomment">
+                  <div class="comment_content">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/43/Paul_Circle.png"
+                        alt=""
+                      />
+                      <h3>
+                        <a href="#">Jansennns_</a>
+                      </h3>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a>WOW! Very cool rainbow!</a>
+                </div>  
+                <div class="thecomment">
+                  <div class="comment_content">
+                    <img
+                        src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png"
+                        alt=""
+                      />
+                      <h3>
+                        <a href="#">chuumuch</a>
+                      </h3>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a>I Like My Own Post!</a>
+                </div>  
+                <div class="thecomment">
+                  <div class="comment_content">
+
+              <!--modal-post-end-->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>feather.replace()</script>
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+          
+          // Get the button that opens the modal
+          var btn = document.getElementById("comment_button");
+          
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          for(var i = 0 ; i < 1000 ; i++) {
+            btn.onclick = function() {
+            modal.style.display = "block";
+            };
+          }
+          
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+
+          <script>
+            window.addEventListener("load", function () {
+              const loader = document.querySelector(".loader");
+              loader.className += " hidden"; // class "loader hidden"
+            });
+          </script> 
+</body>
+
+</html>
